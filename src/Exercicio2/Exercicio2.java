@@ -5,13 +5,21 @@
  */
 package Exercicio2;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 /**
  *
  * @author tiago
  */
 public class Exercicio2 {
-
     
+    static void printCollection(Collection<?> c) {
+        for (Object e : c) {
+            System.out.println(e);
+        }
+    }
 
     /**
      * @param args the command line arguments
@@ -38,13 +46,27 @@ public class Exercicio2 {
         UnorderedPair<Integer> teste7 = new UnorderedPair<>(2, 2);
 
         System.out.println(teste5.equals(teste6));
-        
-        //teste
+
+        //teste valores da mesma classe sao iguais ou nao
         System.out.println(teste5.getFirst());
         System.out.println(teste5.getSecond());
 
         System.out.println(teste5.equalElements());
         System.out.println(teste7.equalElements());
+
+        
+        //Criação de uma Colection e adicao de elementos
+        List<Integer> stones = new ArrayList<>();
+        
+        stones.add(1);
+        stones.add(2);
+        stones.add(3);
+        stones.add(4);
+        
+        //teste printar elementos da collection
+        printCollection(stones);
+        
+        
     }
 
 }
