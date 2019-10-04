@@ -17,7 +17,15 @@ public class UnorderedPair<T extends Comparable> extends Pair<T> {
 
     public UnorderedPair() {
     }
-
+    
+    public boolean equalElements(){
+        if(getFirst() == getSecond()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
     
     @Override
     public boolean equals(Object otherObject) {
