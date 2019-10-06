@@ -28,7 +28,6 @@ public class Main {
         
         System.out.println(lista1.toString());
         
-        
         //Solução
         ArrayList<String> al = new ArrayList<String>();
         al.add("bolaaaaaa");

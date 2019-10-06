@@ -7,7 +7,6 @@ package Exercicio4P2;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -25,12 +24,6 @@ public class OrdenedList<T> {
             ordem.add(lista[i]);
         }
         
-        Collections.sort(ordem, new Comparator<String>() {
-            @Override
-            public int compare(String s1, String s2) {
-                return s2.length()-s1.length();
-            }
-        } );
     }
 
     @Override
